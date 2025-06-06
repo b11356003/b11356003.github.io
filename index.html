@@ -17,7 +17,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MySite</a>
+            <a class="navbar-brand" href="#">藥師少女的獨語</a>
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -25,26 +25,171 @@
 
         <div class="collapse navbar-collapse" id="navCollapse">
             <ul class="navbar-nav me-auto">
-                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page1')">頁面 1</button></li>
-                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page2')">頁面 2</button></li>
-                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page3')">頁面 3</button></li>
+                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page1')">首頁</button></li>
+                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page2')">介紹</button></li>
+                <li class="nav-item"><button class="nav-link btn btn-link" onclick="showContent('page3')">人物介紹</button></li>
             </ul>
         </div>
     </nav>
 
     <div id="page1" class="content" style="padding: 20px;">
-        <h2>頁面 1</h2>
-        <p>這是頁面 1 的內容。</p>
+        <h1>首頁</h1>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.4gamers.com.tw/news-image/98573f13-43e4-4b22-90ec-ebfdce063a16.jpg" class="d-block w-100" alt="圖片1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.koc.com.tw/wp-content/uploads/2024/11/20241106231130_0_84707e.jpg" class="d-block w-100" alt="圖片2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://resize-image.vocus.cc/resize?norotation=true&quality=80&url=https%3A%2F%2Fimages.vocus.cc%2F98fedebc-3a99-4e7f-a17e-bb308c726bea.jpg&width=740&sign=F3ocXVeh66ldBb3Tk8ealJS-Ub2fjRI06TV5xZMupxA" class="d-block w-100" alt="圖片3">
+                </div>
+
+            </div>
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+
+        </div>
+
+
     </div>
 
     <div id="page2" class="content" style="padding: 20px;">
-        <h2>頁面 2</h2>
-        <p>這是頁面 2 的內容。</p>
+        <h1>劇情介紹</h1>
+        <p>出身煙花巷的貓貓是善於推理和具豐富藥理知識的少女，原本在煙花巷擔任藥師，但由於外出採藥時遭人口販子拐賣至後宮作下級侍女（宮女），
+            意外被管理後宮的宦官壬氏發現其才能。憑藉自身的學識和技能，貓貓在勾心鬥角的宮廷中排憂解難、逐漸建立人脈對宮廷產生影響力，也發掘出宮廷裡不為人知的一面。
+        </p>
     </div>
 
     <div id="page3" class="content" style="padding: 20px;">
-        <h2>頁面 3</h2>
-        <p>這是頁面 3 的內容。</p>
+        <h1>人物介紹</h1>
+        
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="https://pbs.twimg.com/media/FzwiaIJaIAArrwL?format=jpg&name=900x900" class="card-img-top" alt="貓貓" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">貓貓</h5>
+                    <p class="card-text">在花街的綠青館和藥坊工作，名字取自母親鳳仙常常配合鳳仙花製作指甲油而使用的酢漿草「貓貓草」，她身材瘦小，為防身常以化妝和雀斑變醜。對藥物，特別是毒藥有深厚造詣，興奮時會跳舞，甚至用自己試藥。左腕因測試藥物而傷痕累累，需用繃帶遮掩。</p>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://truth.bahamut.com.tw/s01/202410/forum/48162/05e006f2114823114f1d56552901e2dd.JPG" class="card-img-top" alt="壬氏" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">壬氏</h5>
+                    <p class="card-text">管理後宮事務的宦官，自稱24歲，實際18歲，容貌出眾，讓女性和男性都深受吸引。貓貓稱其為「仙女下凡般的完美」。性格執拗，為達目標不擇手段。發現貓貓的才能後，想將她作為專屬侍女。對她不感興趣後，反而產生好感，稱呼她為藥師，對直呼其名感到害羞。天性善良，但工作卻陰暗，常因牽連無辜而感到無奈。</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="https://truth.bahamut.com.tw/s01/202410/forum/48162/e4aef0fde6b86715514694e13009e564.JPG" class="card-img-top" alt="高順" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">高順</h5>
+                    <p class="card-text">表面上是輔佐壬氏的宦官，實為武官。37歲。相當照顧貓貓（雖然也對她對藥物的癡狂感到無奈），因為貓貓表示不需對她使用尊稱的提議而將對方稱為「小貓」。</p>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://truth.bahamut.com.tw/s01/202410/forum/48162/8f088bf94aae0c131629bddaa46137f9.JPG" class="card-img-top" alt="小蘭" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">小蘭</h5>
+                    <p class="card-text">後宮的下級女官，當初被父母賣進後宮。活潑開朗，天真老實，對貓貓毫無偏見而熱心與她相處。喜歡收集後宮的各種八卦傳聞，而貓貓也常用零食當誘餌與她交換情報，也教她讀書認字。</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="https://anibase.net/files/6f42624b2d89b4a1723fd9368f2e25c1" class="card-img-top" alt="羅門" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">羅門</h5>
+                    <p class="card-text">花街的醫生，貓貓的養父與傳授她藥理的老師。過去是後宮的醫官與宦官，曾在後宮各處種植了不少草藥，後因為接生的皇子死去的緣故遭到了削去一邊膝蓋骨的肉刑並被趕出後宮與羅家。實為貓貓生父漢羅漢的叔叔，也就是貓貓、漢羅半和漢俊傑的叔公。</p>
+                </div>
+            </div>
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://truth.bahamut.com.tw/s01/202410/forum/48162/ce28693cf6a67af13ab74acc0dbecf2c.JPG" class="card-img-top" alt="羅漢" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">羅漢</h5>
+                    <p class="card-text">有著狐狸般的細眼、戴著單片眼鏡的軍師，位列「太尉」，是荔國除皇帝外品階的最高武官，因為言行怪異、話中帶刺而被他人疏而遠之。從小就無法辨識他人的長相（卻唯獨能識別愛人鳳仙與女兒貓貓的長相），在叔父的建議下用自己擅長的圍棋與將棋的棋面來代替人臉，這也讓他把其他人當作棋子來使用，使他獲得了知人善任的評價。</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+
+        <div class="card-group">
+            <div class="card" style="width: 18rem;">
+                <img src="https://truth.bahamut.com.tw/s01/202410/forum/48162/ec7adce7efbf0f72f0b58f54346c0c5c.JPG" class="card-img-top" alt="玉葉妃" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">玉葉妃</h5>
+                    <p class="card-text">本名楊玉葉，居於翡翠宮的皇帝寵妃之一，故事開始時19歲。出身戍西州（西都）楊家，是有著一頭紅髮與碧綠雙眼的胡姬，父親是西都管理者楊玉袁，母親是帶胡人血脈的歌姬，在封后大典後家族獲賜字為「玉字一族」。用人十分謹慎，不算貓貓在內，僅有4名宮女服侍左右，懷三皇子期間才又讓家裡送來為戍氏三姊妹作為幫手。因為所有侍女皆為同鄉，對她們待遇很好。</p>
+                </div>
+            </div>
+
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzgFiw5GpJ2tIuY-YkG0NVDX2pzgKCaTdXGQ&s" class="card-img-top" alt="梨花妃" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">梨花妃</h5>
+                    <p class="card-text">賢妃，23歲，居住於水晶宮，是皇帝的寵妃之一。表面高傲，但實則氣度不凡，娘家為皇帝的親戚。皇帝考慮到平衡前朝世家的影響力，並因貓貓提到近親通婚對子孫的影響，以及祖先王母希望子孫娶西方女子為后，未考慮將梨花妃立為皇后。</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="card-group">
+
+
+            <div class="card" style="width: 18rem;">
+                <img src="https://anibase.net/files/72d647e7b40949417fdfa9672e3317da" class="card-img-top" alt="里樹妃" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">里樹妃</h5>
+                    <p class="card-text">德妃，14歲，居住於金剛宮，出身卯字一族。亡母為前任家主的獨生女，父親卯柳是旁系養子，家中有異母兄卯純和姊姊，常被欺負。曾為前任皇帝的妃子，先皇駕崩後出家，後被送入後宮。因年紀小未受皇帝喜愛，與他僅有如父女的情誼，稱其為「鬍子叔叔」，對戀愛毫無經驗。與阿多妃有母女般的情誼，但這也成為她險些被刺殺的原因。</p>
+                </div>
+            </div>
+
+
+                        <div class="card" style="width: 18rem;">
+                <img src="https://anibase.net/files/c7afc282985988b38727ef9efeb59509" class="card-img-top" alt="阿多妃" style="width: 100%; height: 10rem; object-fit: contain;">
+                <div class="card-body">
+                    <h5 class="card-title">阿多妃</h5>
+                    <p class="card-text">前淑妃，35歲，原居於石榴宮。母親水蓮是皇帝的奶娘，自幼與皇帝和高順長大。曾為太子妃，與皇帝育有一子，但因難產失去生育能力，孩子夭折。她在皇太后的默許下將孩子掉包，心感後悔。</p>
+                </div>
+        </div>
+
+
+
     </div>
 
     <script>
